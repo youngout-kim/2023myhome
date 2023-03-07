@@ -1,0 +1,107 @@
+@charset "utf-8";
+html,body{height: 100%;}
+
+/* reset */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+.clearfix::after{content: "";display: block;clear: both;}
+a:link,a:visited{text-decoration: none;color:#000;}
+.container{width: 980px;margin: 0 auto;}
+
+/* header */
+.top{border-bottom: 1px solid #000;margin-bottom: 10px;border-top: 1px solid#000;}
+.submenu{float: right;height: 26px;}
+.submenu li{float: left;}
+.submenu li a{
+    display: block;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 26px;
+    position: relative;
+}
+.submenu li a:after{
+        content:"";
+        display: block;
+        height: 4px;
+        width: 4px;
+        background: #000;
+        position: absolute;
+        left: -3px;
+        top: 10px;
+}
+.submenu li:first-child a::after{display: none;}
+
+h1.logo{
+    width: 200px;height: 49px;margin: 0 auto;
+    margin-bottom: 10px;
+}
+h1.logo.img{display: block;}
+
+/* mainmenu */
+#hd .bottom{
+    background: #1c5da3;
+
+}
+#hd .menu li{
+    float: left;
+    width: calc(100% / 6);
+}
+#hd .menu li a{
+    display: block;
+    height: 44px;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
+
+
+.visual{background:#223a6a url(../01site/img/visual_bg.jpg);
+}
+.vWrap{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.vWrap img{position: absolute;}
+.vWrap .img1{
+    left: 0;top: 50%;
+    margin-top: -120px;
+
+}
+.vWrap .img2{
+    right: 0; top: 12px;
+}
+
+
+
+
+.bWrapper{
+    background: #eee;margin-bottom: 50px;
+}
+.bWrap li{
+    width: calc( 100% / 5 );
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+.bWrap li img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.bWrap li h3{margin-bottom: 7px;}
+.bWrap li:nth-child(1){background: #7C99B9;}
+.bWrap li:nth-child(2){background: #4F74A1;}
+.bWrap li:nth-child(3){background: #4B8CE0;}
+.bWrap li:nth-child(4){background: #3DB5F2;}
+.bWrap li:nth-child(5){background: #95C8FF;}
+
+
+.jobwrap .jobitem{
+    float: left;
+    width: calc(100% / 3);
+}

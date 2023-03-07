@@ -23,8 +23,6 @@ h3{font-size:18px;letter-spacing: -1px;}
 .submenu li{float: left;}
 .submenu li a{
     display: block;
-    _height: 26px;
-    _background: pink;
     font-size: 12px;
     padding: 0 10px;
     line-height: 26px;
@@ -32,10 +30,10 @@ h3{font-size:18px;letter-spacing: -1px;}
 }
 .submenu li a:after{
     content:"";display: block;height: 4px;width: 4px;background: #888;
-    position: absolute;left: -2px;;top: 11px;
-    border-radius: 50%;
+    position: absolute;left: -2px;top: 11px;
+    /* border-radius: 50%; */
 }
-.submenu li:first-child a:after{display: none;}
+/* .submenu li:first-child a:after{display: none;} */
 
 h1.logo{width: 200px;height: 49px;margin: 0 auto;margin-bottom: 10px;}
 h1 img{display: block;}
